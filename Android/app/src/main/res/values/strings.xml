@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">バスナビ</string>
+    <string name="title_home">平日の時刻表</string>
+    <string name="title_dashboard">土曜日の時刻表</string>
+    <string name="title_notifications">日曜日・祝日の時刻表</string>
+    <string name="title_news">お知らせ</string>
+</resources>

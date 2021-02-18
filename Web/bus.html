@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns="https://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>光洋バスナビ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script>function koshin(){
+        location.reload();
+      }</script>
+    <script>function jump(){
+        document.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeob5whM2L-PgVov7j3AuoQyPYDwZnLGA2KxRoMOhC_by4RGw/viewform";}</script>
+        <!-- //document.location.href = "#Recruit";} -->
+    <script>function anc(){
+        document.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd8SzAWTvaWeJjS9v-20NLSuDXtjlUoGdM6kbK3St4cMdeZ2g/viewform?usp=sf_link";}</script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-86129978-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+<!--ページ-->
+<div data-role="page">
+    <!--ヘッダー-->
+    <div data-role="header" id="page1">
+        <h1>光洋バスナビ</h1></div>
+    <div data-role="header" id="page1">
+        <h2>平日版</h2>
+    </div>
+    <!--コンテンツ-->
+    <ul data-role="listview">
+       <input type="button" value="バスナビのアンケートへのご協力お願いします" onclick="jump()">
+        <li><a href="#Iwaki">
+            いわき駅</a></li>
+        <li><a href="#Izumi">
+            泉駅</a></li>
+        <li><a href="#Yumoto">
+            湯本駅</a></li>
+        <li><a href="#Onahama">
+            小名浜車庫</a></li>
+        <li><a href="#Rapark">
+            ラパークへ行く</a></li>
+        <input type="button" value="時刻表ミスやお問い合わせ" onclick="anc()">
+    </ul>
+    <!--フッター-->
+    <div data-role="footer">
+        <h4>光洋バスナビ</h4>
+    </div></div>
+</div>
+
+<div data-role="page" id="Iwaki">
+    <!--ヘッダー-->
+    <div data-role="header">
+        <h1>いわき駅</h1>
+    </div>
+    <!--コンテンツ-->
+    <div data-role="content">
+        <div role="main" class="ui-content">
+            <h3>運賃:360円</h3>
+            <h3></h3>
+                <div data-role="tabs" data-active="0">
+                    <div data-role="navbar" data-iconpos="left">
+                        <ul>
+                            <li><a href="#Toukou" class="ui-btn-active" class="">登校</a></li>
+                            <li><a href="#Gekou">下校</a></li>
+                        </ul>
+                    </div>
+                    
+            <!--下校-->
+            <div id="Gekou">
+                <h2>下校の時刻表</h2>
+                <h4>「※スクールバス」と書いてある時刻は学校内から発車するバスです。</h4>
+            <div data-role="collapsible" data-inset="false"data-theme="b">
+                <h3>15:28より前の時刻表</h3>
+                <ul data-role="listview">
+			    <li>
+			<div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>10:13→11:00</h3>
+				<p>光洋高校側のバス停から乗車</p></div>
+			<div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>10:43→11:29</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>11:13→12:00</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>11:43→12:30</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>12:23→12:52</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>12:43→13:29</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>13:13→14:00</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>13:43→14:32</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>14:13→14:59</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>14:43→15:14</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>14:43→15:32</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+				<h3>15:13→15:59</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            </li></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>15:28→15:59</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>15:43→16:14</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>15:43→16:32</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>16:13→17:02</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>16:23→16:54</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>(直行)16:40→17:05 ※スクールバス</h3>
+                <p>校内バスロータリーから乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>16:45→17:15 ※スクールバス</h3>
+                <p>校内バスロータリーから乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>17:03→17:34</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>17:13→18:02</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>17:23→17:54</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>17:40→18:10 ※スクールバス</h3>
+                <p>校内バスロータリーから乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>17:58→18:29</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>18:13→18:44</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>18:13→18:59</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>18:20→18:50 ※スクールバス</h3>
+                <p>校内バスロータリーから発車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>18:45→19:15 ※スクールバス</h3>
+                <p>校内バスロータリーから発車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>18:58→19:29</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>19:03→19:49</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>20:03→20:27</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                <h3>(最終便)20:58→21:22</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+                    </div>
+
+            <!--登校-->
+            <div id="Toukou">
+                <h2>登校の時刻表</h2>
+                <h3>乗り場:6番</h3>
+            <div data-role="collapsible">
+                <h3>06:55→07:16</h3>
+                </div>
+            <div data-role="collapsible" data-theme="b">
+                <h3>07:20→07:48 学校がある日のみ運行</h3>
+               </div>
+            <div data-role="collapsible" data-theme="b">
+                <h3>07:30→07:58 学校がある日のみ運行</h3>
+                </div>
+            <div data-role="collapsible" data-theme="b">
+                <h3>(直行)07:40→08:02 学校がある日のみ運行</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>07:50→08:11</h3>
+                </div>
+            <div data-role="collapsible" data-theme="b">
+                <h3>07:55→08:23 学校がある日のみ運行</h3>
+                </div>
+            <div data-role="collapsible" data-theme="b">
+                <h3>(直行)08:00→08:22 学校がある日のみ運行</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>08:05→08:26</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>08:15→08:36</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>08:30→08:51</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>09:10→09:49</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>10:00→10:22</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>10:30→11:09</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>11:00→11:39</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>11:30→12:09</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>12:00→12:39</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>12:30→12:52</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>13:00→13:39</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>13:30→14:09</h3>
+                </div>
+            <div data-role="collapsible">
+                <h3>14:00→14:22</h3>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--フッター-->
+    <div data-role="footer">
+        <h4>光洋バスナビ</h4>
+    </div>
+    </div>
+
+<div data-role="page" id="Izumi">
+    <!--ヘッダー-->
+    <div data-role="header">
+        <h1>泉駅</h1>
+    </div>
+    <!--コンテンツ-->
+    <div data-role="content">
+      </div>
+    <div role="main" class="ui-content">
+        <h3>運賃:660円</h3>
+            <div data-role="tabs" data-active="0">
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li><a href="#Toukou" class="ui-btn-active">登校</a></li>
+                    <li><a href="#Gekou">下校</a></li>
+                </ul>
+            </div>
+            <!--登校-->
+            <div id="Toukou">
+                <h2>登校のバス時刻表です</h2>
+                <h4>黒色の時刻は学校がある日のみ運行されます。</h4>
+                <h4>泉駅2番乗り場から発車</h4>
+                <div data-role="collapsible" data-theme="b">
+                    <h3>07:30→08:15 ※スクールバス</h3>
+                    <p>2番乗り場から乗車</p></div></div>
+            <!--下校-->
+            <div id="Gekou">
+                <h2>下校のバス時刻表です</h2>
+                <h4>黒色の時刻は学校がある日のみ運行されます。</h4>
+                <h5>黒色の時刻のバスは学校内から発車するバスです。</h5>
+    <div data-role="collapsible" data-theme="b">
+        <h3>16:40→17:25 ※スクールバス</h3>
+        <p>校内ロータリーから乗車</p></div>
+        </div></div></div>
+    <!--フッター-->
+    <div data-role="footer">
+        <h4>光洋バスナビ</h4>
+    </div></div>
+
+<div data-role="page" id="Yumoto">
+    <!--ヘッダー-->
+    <div data-role="header">
+        <h1>湯本駅</h1>
+    </div>
+    <!--コンテンツ-->
+    <div data-role="content">
+        <div>
+            </div>
+    <div role="main" class="ui-content">
+        <h3>運賃:530円</h3>
+        <div data-role="tabs" data-active="0">
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li><a href="#photo" class="ui-btn-active">登校</a></li>
+                    <li><a href="#sound">下校</a></li>
+                </ul>
+            </div>
+        <div id="photo">
+            <h2>登校のバス時刻表です</h2>
+            <h4>黒色の時刻は学校がある日のみ運行されます。</h4>
+            <h4>湯本駅5番乗り場から発車</h4>
+            <div data-role="collapsible" data-theme="b">
+                <h3>07:20→08:05 ※スクールバス</h3>
+                <p>湯本駅5番乗り場から発車</p>
+            </div></div>
+        <div id="sound">
+            <h2>下校のバス時刻表です</h2>
+            <h4>黒色の時刻は学校がある日のみ運行されます。</h4>
+            <h4>黒色の時刻のバスは学校内から発車するバスです。</h4>
+    <div data-role="collapsible" data-theme="b">
+        <h3>16:40→17:25 ※スクールバス</h3>
+        <p>校内ロータリーから乗車</p></div>
+    <div data-role="collapsible" data-theme="b">
+        <h3>18:45→19:30 ※スクールバス</h3>
+        <p>校内ロータリーから乗車</p></div></div></div></div></div>
+    <!--フッター-->
+    <div data-role="footer">
+        <h4>光洋バスナビ</h4>
+    </div></div>
+
+<div data-role="page" id="Onahama">
+    <!--ヘッダー-->
+    <div data-role="header">
+        <h1>小名浜</h1>
+    </div>
+    <!--コンテンツ-->
+    <div data-role="content">
+        <div>
+        </div>
+        <div role="main" class="ui-content">
+            <h3>運賃:840円</h3>
+            <div data-role="tabs" data-active="0">
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li><a href="#photo" class="ui-btn-active">登校</a></li>
+                        <li><a href="#sound">下校</a></li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <h2>登校のバス時刻表です</h2>
+                    <h4>黒色の時刻は学校がある日のみ運行されます。</h4>
+                    <div data-role="collapsible"data-theme="b">
+                        <h3>07:25→08:10 ※スクールバス</h3>
+                        <p>小名浜車庫から発車</p></div>
+                <div data-role="collapsible">
+                    <h3>07:40→08:09</h3>
+                    <p>小名浜車庫から発車</p></div>
+                <div data-role="collapsible">
+                    <h3>10:10→10:39</h3>
+                    <p>小名浜車庫から発車</p></div>
+                <div data-role="collapsible">
+                    <h3>12:10→12:39</h3>
+                    <p>小名浜車庫から発車</p></div>
+                <div data-role="collapsible">
+                    <h3>14:10→14:40</h3>
+                    <p>小名浜車庫から発車</p></div>
+                <div data-role="collapsible">
+                    <h3>16:10→16:40</h3>
+                    <p>小名浜車庫から発車</p></div>
+                <div data-role="collapsible">
+                    <h3>17:40→18:10</h3>
+                    <p>小名浜車庫から発車</p></div>
+
+
+                    </div>
+                <div id="sound">
+                    <h2>下校のバス時刻表です</h2>
+                    <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                        <h3>06:42→07:20 ※学校がある日のみ</h3>
+                        <p>光洋高校側のバス停から乗車</p></div>
+                    <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                        <h3>07:42→08:12 ※学校がある日のみ</h3>
+                        <p>光洋高校側のバス停から乗車</p></div>
+                    <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                        <h3>09:47→10:20 ※エブリア経由</h3>
+                        <p>光洋高校側のバス停から乗車</p></div>
+                    <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                        <h3>12:17→12:52 ※エブリア経由</h3>
+                        <p>光洋高校側のバス停から乗車</p></div>
+                    <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                        <h3>13:47→14:22 ※エブリア経由</h3>
+                        <p>光洋高校側のバス停から乗車</p></div>
+                    <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                        <h3>15:17→15:52 ※エブリア経由</h3>
+                        <p>光洋高校側のバス停から乗車</p></div>
+                    <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                        <h3>16:47→17:23 ※エブリア経由</h3>
+                        <p>光洋高校側のバス停から乗車</p></div>
+                    <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                        <h3>16:50→17:37 ※スクールバス</h3>
+                        <p>校内ロータリーから乗車</p></div>
+                    <div data-role="collapsible"data-collapsed="false"data-content-theme="b">
+                        <h3>17:47→18:23 ※エブリア経由</h3>
+                        <p>光洋高校側のバス停から乗車</p></div></div></div></div></div>
+    <!--フッター-->
+    <div data-role="footer">
+        <h4>光洋バスナビ</h4>
+    </div></div>
+
+    <div data-role="page" id="Rapark">
+            <!--ヘッダー-->
+            <div data-role="header">
+                <h1>ラパーク</h1>
+            </div>
+            <div data-role="content">
+                <h3>運賃:100円</h3>
+            <div role = "main" class="ui-content">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>07:16→07:28</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>08:09→08:18</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>08:11→08:23</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>08:26→08:38</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>08:36→08:48</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>08:51→09:03</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>09:43→10:00</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>09:49→09:57</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>10:13→10:30</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>10:22→10:35</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>10:39→10:46</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>10:43→11:00</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>11:09→11:17</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>11:13→11:30</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>11:39→11:47</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>11:43→12:00</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>12:09→12:17</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>12:39→12:46</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>12:39→12:47</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>12:43→13:00</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>12:52→13:05</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>13:13→13:30</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>13:39→13:47</h3>
+                 <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>13:43→14:00</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>14:09→14:17</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>14:13→14:30</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>14:22→14:35</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>14:40→14:47</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>14:43→15:00</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>15:09→15:17</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>15:13→15:30</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>15:39→15:47</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>15:43→16:00</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>16:13→16:30</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>16:14→16:25</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>16:33→16:39 ※平商登校日のみ</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>16:39→16:50</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>16:40→16:47</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>16:43→16:50 ※湯高登校日のみ</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>16:54→17:05</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>17:09→17:20</h3>
+                 <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>17:13→17:30</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>17:19→17:30</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>17:34→17:45</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>17:43→17:50 ※湯高登校日のみ</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>17:49→18:00</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>18:04→18:15</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>18:10→18:17</h3>
+                 <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>18:13→18:30</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>18:19→18:30</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>18:34→18:45</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>18:49→19:00</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>19:01→19:08 ※秀英高校登校日のみ</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>19:03→19:20</h3>
+                <p>光洋高校側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>19:04→19:15</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>19:22→19:32</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>19:37→19:57</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>19:52→20:02</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>20:07→20:17 ※学校登校日のみ</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>20:22→20:32</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>20:35→20:45 ※学校登校日のみ</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>21:05→21:15</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>21:35→21:44</h3>
+                <p>いわき公園側のバス停から乗車</p></div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>22:05→22:14</h3>
+                <p>いわき公園側のバス停から乗車</p></div></div></div>
+            <!--フッター-->
+            <div data-role="footer">
+                <h4>光洋バスナビ</h4>
+            </div></div>
+
+            <div data-role="page" id="Recruit">
+                    <!--ヘッダー-->
+                    <div data-role="header">
+                        <h1>光洋バスナビ</h1>
+                    </div>
+
+                    <div data-role="content">
+                    <h4>こんにちは 15生の遠藤幹です</h4>
+                    <h4>いつも光洋バスナビをご利用いただきありがとうございます</h4>
+                    <h4>iPhone・Android版にアップデートを配信しましたのでアップデートをお願いします！</h4>
+                    <h4>iPhone版の最新バージョンは「5.2」Android版の最新バージョンは「5.1」です</h4>
+                    <br>
+                    <h4>アップデート内容(iPhone版)</h4>
+                    <ul>
+                        <li>画面上のボタンやデザインを一部変更しました</li>
+                        <li>アプリの安定性を向上させました</li>
+                    </ul>
+                    <h4>アップデート内容(Android)</h4>
+                    <ul>
+                        <li>デザインを一新し、より使いやすくなりました</li>
+                        <li>アプリのバグなどを修正しました</li>
+                        <li>アプリの安定性を向上させました</li>
+                    </ul>
+                    <h4>これからも光洋バスナビをよろしくお願いします！</h4>
+
+                    </br>
+                    </div>
+
+
+                    <!--フッター-->
+                    <div data-role="footer">
+                        <h4>光洋バスナビ</h4>
+                    </div></div>
+
+</body>
+</html>
